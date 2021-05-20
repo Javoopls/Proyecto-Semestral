@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caos News</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css propio/styles.css">
+    <link rel="stylesheet" href="css/Estilos.css">    
 </head>
+
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="container">
         <div class="row" id="bar">
             <div class="col" id="navbar"> <!--NAVBAR-->
                 <nav class="navbar navbar-expand-lg navbar-light" >
-                    <a class="navbar-brand" href="#">
-                    <img src="images/logo_transparent.png" alt="logo" class="img-fluid" id="logo">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="images/logo_transparent.png" width="70" height="70" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -26,7 +27,16 @@
                           <a class="nav-link" href="#">Lo Último del Día<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Iniciar Sesión</a>
+                          <a class="nav-link" href="contacto.html">Contáctanos</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                          <a class="nav-link" href="CreacionNoticia.html">Subir Noticia</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="api.html">Clima en tu ciudad</a>
                         </li>
                         
                         <!-- <li class="nav-item">
@@ -49,10 +59,13 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Buscar Noticias" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                       </form>
+                      
                     </div>
                   </nav>
             </div>
         </div>
+        
+
         <div class="row" id="carrusel">
             <div class="col"> <!--Carrusel-->
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -94,16 +107,17 @@
                     </a>
                 </div>
             </div>
-            <!-- <div class="col" id="covi">
+            <!-- <div class="col-2" id="covi">
               <a href="https://www.minsal.cl/calendario-de-vacunacion-masiva-contra-covid-19/%22%3E target="_blank></a>
                 <img class="img-fluid" src="images/covi.png" alt="" width="300" height="400">
               </a>
             </div> -->
         </div>
+
         <section class="row" id="card">
             <article class="col">
                 <div class="card" style="width: 18rem;" id="card1">
-                    <a href="https://www.telesurtv.net/news/brasil-suma-nuevo-record-decesos-covid-20210409-0004.html" target="_blank">
+                    <a href="noticia 1.html">
                         <img src="images/covid.jpg" class="img-fluid card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Brasil marca nuevo récord de fallecidos por coronavirus en 24 horas</p>
@@ -113,7 +127,7 @@
             </article>
             <article class="col">
                 <div class="card" style="width: 18rem;" id="card2">
-                    <a href="https://www.dw.com/es/un-arco%C3%ADris-en-marte-la-nasa-explica-el-origen-del-enigm%C3%A1tico-fen%C3%B3meno-captado-por-perseverance/a-57135064" target="_blank">
+                    <a href="noticia 2.html">
                         <img src="images/marte.jpg" class="img-fluid card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">¿Arcoíris en Marte? La NASA explica el extraño fenómeno captado por el Perseverance</p>
@@ -123,7 +137,7 @@
             </article>
             <article class="col">
                 <div class="card" style="width: 18rem;" id="card3">
-                    <a href="https://www.cnnchile.com/economia/ranking-forbes-millonarios-chilenos-aumentaron-fortuna-73_20210407/#:~:text=Los%20otro%20cuatro%20nombres%20que,73%25%20respecto%20al%20a%C3%B1o%20anterior." target="_blank">
+                    <a href="noticia 3.html">
                         <img src="images/rich.jpg" class="img-fluid card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Ranking Forbes: Millonarios chile﻿nos aumentaron su fortuna en 73%, pese a la pandemia. </p>
@@ -132,6 +146,27 @@
                 </div>
             </article>
         </section>
+
+      <footer class="row" id="footer">
+          <section class="col-8">
+              <blockquote class="blockquote">
+                  <p class="mb-0">CAOS NEWS </p>
+                  <footer class="blockquote-footer">Informándote en cada momento del día, porque somos tu noticiero</cite></footer>
+              </blockquote>
+          </section>
+          <section class="col-4 text-right">
+
+
+              <p><em>Tu Noticiero Oficial</em></p>
+              <address>
+                  Av. Siempre viva #742, <br>
+                  Springfield
+              <hr>
+              </address>
+
+          </section>
+      </footer>
+        
     </div>
     
     <script src="js/jquery-3.6.0.js"></script>
