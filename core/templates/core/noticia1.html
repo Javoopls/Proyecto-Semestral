@@ -1,0 +1,118 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/Estilos.css' %}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="bar">
+            
+            <div class="col" id="navbar"> <!--NAVBAR-->
+                <nav class="navbar navbar-expand-lg navbar-light" >
+                    <a class="navbar-brand" href="http://127.0.0.1:8000/">
+                      <img src="{% static 'core/img/logo_transparent.png'%}" width="70" height="70" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Lo Último del Día<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="http://127.0.0.1:8000/contacto">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="api.html">Clima en tu ciudad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://127.0.0.1:8000/login">Iniciar Sesión</a>
+                        </li>
+                        
+                        <!-- <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Registro</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Redes Sociales
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                          </div>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar Noticias" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="margin-left: 70px; margin-right: 30px;">
+                <h1>Brasil marca nuevo récord de fallecidos por coronavirus en 24 horas</h1>
+                <img src="{% static 'core/img/brasil.jpg'%}" class="img-fluid rounded mx-auto d-block" style="padding-top: 60px;" alt="">
+            </div>        
+          </div>
+          <hr>
+        <div class="row">
+          <div class="col" style="margin-left: 70px; margin-right: 30px;">
+            <p><strong>Desde marzo, Brasil ha sido declarado epicentro de la Covid-19 en el mundo, superando a Estados Unidos en número diario de muertes e infecciones.</strong></p>
+            <p>Brasil superó por segunda vez esta semana los 4.000 decesos por la Covid-19 en 24 horas, evidenciado que el país se encuentra en el peor momento de la pandemia.</p>
+            <p>Según el Consejo Nacional de Secretarios de Salud (Conass), en el último día el gigante suramericano reportó 4.249 decesos, marcando un nuevo récord en la cifra de fallecidos por el virus.
+              Con la actualización, el país suma 345.024 muertes desde el  inicio de la pandemia , en marzo de 2020.</p>
+            <p>Durante la presente semana Brasil registró 4.195 decesos el martes, 3.829 el miércoles y 4.249 este jueves, es decir, 12.273 en apenas tres días, casi la misma cifra que Bolivia (12.366) en toda la pandemia, de acuerdo con los datos de la Organización Mundial de la Salud (OMS).
+              En cuanto a los cifra de nuevos contagios, el Conass indicó que se registraron 86.652 casos, elevando el total de infectados confirmados a 13.279.857.
+              Los datos en cuanto a la cifra de contagios revelan un incremento por encima del promedio de los últimos siete días, que fue de  62.859.
+              Brasil es el segundo país con más fallecidos y más casos confirmados de la enfermedad, después de Estados Unidos, y afronta actualmente la peor fase de la pandemia con los hospitales públicos desbordados ante el crecimiento de los ingresos por la Covid-19.</p>
+            <p>El director de la Agencia Nacional de Vigilancia Sanitaria de Brasil (Anvisa), Antonio Barra Torres, admitió este jueves que la pandemia "está lejos de su final".
+              "No hay entre nosotros la convicción de que la peor fase haya pasado", afirmó con resignación en una comparecencia ante una comisión del Senado.
+              El magistrado del Supremo Tribunal Federal, Luís Roberto Barroso, ordenó este jueves al Senado instalar una comisión de investigación para averiguar presuntas "omisiones" por parte del Ejecutivo en el manejo de la pandemia.</p>
+            <p>El nuevo récord de decesos llega en un día en que el pleno del Supremo respaldó el cierre de las iglesias y templos, autorizada de forma monocrática por uno de los once magistrados del alto tribunal y apoyada por el mandatario.</p>
+            <p>Desde principios de marzo pasado, Brasil ha sido declarado epicentro de la Covid-19 en el mundo, superando a Estados Unidos en número diario de muertes e infecciones.</p>
+          </div>
+          
+            <div class="col">
+              <img src="{% static 'core/img/mapa.jpeg'%}" class="img-fluid rounded mx-auto d-block" alt="">
+            </div>
+          
+        </div>
+
+        <footer class="row">
+          <section class="col-8">
+              <blockquote class="blockquote">
+                  <p class="mb-0">CAOS NEWS </p>
+                  <footer class="blockquote-footer">Informándote en cada momento del día, porque somos tu noticiero</cite></footer>
+              </blockquote>
+          </section>
+          <section class="col-4 text-right">
+
+
+              <p><em>Tu Noticiero Oficial</em></p>
+              <address>
+                  Av. Siempre viva #742, <br>
+                  Springfield
+              <hr>
+              </address>
+
+          </section>
+      </footer>
+    </div>
+    {% bootstrap_javascript jquery='full' %}
+</body>
+</html>

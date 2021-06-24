@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos News</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" id="navbar"> <!--NAVBAR-->
+                <nav class="navbar navbar-expand-lg navbar-light" >
+                    <a class="navbar-brand" href="index.html">
+                    <img src="images/logo_transparent.png" width="70" height="70" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Lo Último del Día<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contacto.html">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CreacionNoticia.html">Subir Noticia</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="api.html">Clima en tu ciudad</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        </li> -->
+                        
+                        <!-- <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Registro</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Redes Sociales
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <!-- <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                          </div>
+                        </li>
+                      </ul>
+                        <h2 for="" id="saludo">
+                            Hola Javier
+                        </h2>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar Noticias" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                    
+                  </nav>
+            </div>
+        </div>
+        <div>
+            <form action="index2.html" id="formNoticia" method="POST">
+                <div class="form-group">
+                <label for="txtTitulo">Título Noticia</label>
+                <input type="text" class="form-control" name="txtTitulo" id="txtTitulo" placeholder="Agregar aquí el titular">
+                <div class="invalid-feedback" id="errorTxt"></div>
+                </div>
+
+                <div class="form-group">
+                <label for="txtAutor">Autor</label>
+                <input type="text" class="form-control" name="txtAutor" id="txtAutor" placeholder="Agregar autor de noticia">
+                <div class="invalid-feedback" id="errorTxtAut"></div>
+                </div>
+
+                <div class="form-group">
+                <label for="cboCategoria">Categoría</label>
+                <select class="form-control" name="cboCategoria" id="cboCategoria">
+                    <option value="0">-Seleccionar-</option>
+                    <option value="1">Nacional</option>
+                    <option value="2">Internacional</option>
+                    <option value="3">Economía</option>
+                    <option value="4">Deportes</option>
+                    <option value="3">Tendencias</option>
+                    <option value="4">Opinión</option>
+                </select>
+                <div class="invalid-feedback mb-2" id="errorCat"></div>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Seleccionar Imagen</label>
+                    <input type="file" class="form-control-file" id="imagen" required>
+                </select>
+                </div>
+                <br>
+                <div class="form-group">
+                <label for="txaNoticia">Descripción Noticia</label>
+                <textarea class="form-control" name="txaNoticia" id="txaNoticia" rows="3"></textarea><div class="col-10">
+                    <div class="invalid-feedback" id="errorCaja"></div>
+                </div>
+                <div class="col">
+                    <small class="form-text text-muted text-right" id="contChar">0</small>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="txtLugar">Lugar de los hechos</label>
+                    <input type="text" class="form-control" name="txtLugar" id="txtLugar" placeholder="1234 Main St">
+                    <div class="invalid-feedback" id="errorTxtDir"></div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="fechaNoticia" class="col-2 col-form-label">Fecha Noticia</label>
+                    <div class="col-2">
+                    <input class="form-control" type="date" id="fechaNoticia" max="2021-05-20" required>
+                </div>
+                <br>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-secondary" type="reset">Limpiar</button>
+                </div>
+            </form>
+
+            
+
+        </div>
+        <br>
+        <footer class="row col-12" id="footer">
+
+            <section class="col-8">
+                <blockquote class="blockquote">
+                    <p class="mb-0">CAOS NEWS </p>
+                    <footer class="blockquote-footer">Informándote en cada momento del día, porque somos tu noticiero</cite></footer>
+                </blockquote>
+            </section>
+
+            <section class="col-4 text-right">
+                <p><em>Tu Noticiero Oficial</em></p>
+                <address>
+                    Av. Siempre viva #742, <br>
+                    Springfield
+                <hr>
+                </address>
+            </section>
+            
+        </footer>
+        
+    </div>
+    
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

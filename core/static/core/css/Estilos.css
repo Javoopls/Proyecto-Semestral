@@ -1,0 +1,102 @@
+.container-fluid{
+    background-color: #E5E8E8;
+}
+  
+/* #titulo{
+    text-align: center;
+    font-size: 60px;
+} */
+
+#logo{
+    /* height: 8vh; */
+    /* padding-right: 1000px; */
+    /* padding-left: 15px; */
+    /* padding: 0 1100px 5px 15px; */
+    box-sizing: border-box;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+.carousel-item {
+    height: 50vh;
+}
+
+.navbar{
+    background-color: #c2cdd5;
+    padding-bottom: 15px;
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #c2cdd5;
+}
+
+#footer1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #c2cdd5;
+}
+
+#card{
+    background-color: #E5E8E8;
+}
+
+#img-carrusel{
+    font-size: 20px;
+}
+
+#covi{
+    float: right;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#formularioNoticias{
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#saludo{
+    text-decoration: solid;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+.formu{
+    background-color: #E5E8E8;
+}
+
+#formNoticia{
+    position: absolute;
+    left: 50%;
+    padding: 20px;
+}
