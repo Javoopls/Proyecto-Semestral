@@ -11,8 +11,7 @@
     <title>Caos News</title>
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/Estilos.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/formulario.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/creanoticia.css' %}">
 </head>
 
 <body>
@@ -42,7 +41,7 @@
                           <a class="nav-link" href="{% url 'listaNoticia' %}">Mis Noticias</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="api.html">Clima en tu ciudad</a>
+                          <a class="nav-link" href="{% url 'api' %}">Clima en tu ciudad</a>
                         </li>
                         
                         <!-- <li class="nav-item">
@@ -78,18 +77,18 @@
           <h1 style="margin: 5px 0 0 40%; padding-bottom: 15px;" >Crear Noticia</h1>
         </div>
         <div class="row">
-            <form action="" method="POST" id="formNoticia" style="margin-left: 40%;">
+            <form action="" method="POST" id="formNoticia">
 
                 {% csrf_token %}
 
                 {{formularioNoticia|crispy}}
 
-                <button style="margin-bottom: 15px;">Crear Noticia</button>
+                <button id="btnNoticia">Crear Noticia</button>
 
             </form>
         </div>
 
-        <footer class="row" id="footer">
+        <footer class="row" id="footer1">
         <section class="col-8">
             <blockquote class="blockquote">
                 <p class="mb-0">CAOS NEWS </p>

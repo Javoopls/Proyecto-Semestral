@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #c2cdd5;
+    padding-bottom: 15px;
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#footer1 {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    background-color: #c2cdd5;
+}
+
+#saludo{
+    text-decoration: solid;
+    padding-right: 20px;
+    padding-top: 3px;
+}
+
+#formNoticia{
+    margin-left: 39%;
+    padding: 20px;
+}
+
+#btnNoticia{
+    margin-top: 5px;
+}
