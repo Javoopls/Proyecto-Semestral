@@ -2,10 +2,6 @@
     background-color: #E5E8E8;
 }
 
-#logo{
-    box-sizing: border-box;
-}
-
 .carousel-inner img {
     margin: auto;
 }
@@ -40,7 +36,6 @@
 
 #footer1 {
     position: absolute;
-    /* bottom: 0; */
     width: 100%;
     padding-top: 20px;
     color: rgb(0, 0, 0);
@@ -61,23 +56,8 @@
     box-sizing: border-box;
 }
 
-/* #formularioNoticias{
-    padding-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 #saludo{
     text-decoration: solid;
     padding-right: 20px;
     padding-top: 3px;
 }
-
-/* .formu{
-    background-color: #E5E8E8;
-}
-
-#formNoticia{
-    position: absolute;
-    padding: 20px;
-} */
