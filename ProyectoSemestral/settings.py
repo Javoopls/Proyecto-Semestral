@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     #LIBRERIAS DE TERCEROS
     'bootstrap4',
     'crispy_forms',
-    'rest',
+    'rest_framework',
     #LIBRERIAS DJANGO
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     #MI APP
     'core',
+    'rest',
 ]
 
 MIDDLEWARE = [
