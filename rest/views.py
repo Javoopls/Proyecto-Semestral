@@ -30,6 +30,7 @@ def procesar_noticias(request):
 
 @api_view(['GET','PUT','DELETE'])
 @permission_classes((IsAuthenticated,))
+
 def detalle_noticia(request, id):
     try:
         noticia = Noticia.objects.get(idNoticia=id)
