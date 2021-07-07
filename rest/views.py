@@ -27,3 +27,24 @@ def procesar_noticias(request):
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+@api_view(['GET','PUT','DELETE'])
+def detalle_noticia(request, id):
+    try:
+        noticia = Noticia.objects.get(idNoticia=id)
+    except Noticia.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = NoticiaSerializer(noticia)
+        return Response(serializer.data)
+    
+    if request.method == 'PUT':
+        data = JSONParser().parse(request)
+        serializer = NoticiaSerializer(noticia, data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+    
+    if request.method == 'DELETE' :
+        noticia.delete()
+        return Response(status.HTTP_204_NO_CONTENT)
