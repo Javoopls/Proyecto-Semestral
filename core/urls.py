@@ -16,6 +16,6 @@ urlpatterns = [
     path('noticiadjango/crear-noticia/',noticiadjango, name='noticiadjango'),
     path('noticiadjango/mod-noticia/<id>',modNoticia, name='modNoticia'),
     path('noticiadjango/del-noticia/<id>',eliminarNoticia, name='eliminarNoticia'),
-    path('api/',api, name='api'),
+    path('apiClima/',api, name='apiClima'),
     path('noticiadjango/',listaNoticia,name='listaNoticia'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
