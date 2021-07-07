@@ -15,12 +15,12 @@ def login(request):
     try:
         user = User.objects.get(username=username)
     except User.DoesNotExist:
-        return Response("Usuario no existe")
+        return Response("Tus credenciales son incorrectas o expiraron. Inténtalo de nuevo")
 
     pass_ok = check_password(password,user.password)
 
     if not pass_ok:
-        return Response("Contraseña incorrecta")
+        return Response("Tus credenciales son incorrectas o expiraron. Inténtalo de nuevo")
 
     token, created = Token.objects.get_or_create(user=user)
 
